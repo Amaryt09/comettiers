@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MC Tiers List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="admin-login">
+        <button id="loginButton">Admin Login</button>
+    </div>
+
+    <div class="container">
+        <!-- Search Container -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search by name...">
+            <button id="searchButton">Search</button>
+            <div class="search-result" id="searchResult">
+                <div id="searchResultContent"></div>
+                <div id="searchResultActions" style="display: none;">
+                    <button onclick="deleteSearchedUser()">Delete</button>
+                    <button onclick="moveSearchedUser()">Move</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tier Sections -->
+        <div class="tier-section tier-1">
+            <div class="tier-header">TIER 1</div>
+            <div class="names-grid" id="tier1Grid"></div>
+        </div>
+        <div class="tier-section tier-2">
+            <div class="tier-header">TIER 2</div>
+            <div class="names-grid" id="tier2Grid"></div>
+        </div>
+        <div class="tier-section tier-3">
+            <div class="tier-header">TIER 3</div>
+            <div class="names-grid" id="tier3Grid"></div>
+        </div>
+        <div class="tier-section tier-4">
+            <div class="tier-header">TIER 4</div>
+            <div class="names-grid" id="tier4Grid"></div>
+        </div>
+        <div class="tier-section tier-5">
+            <div class="tier-header">TIER 5</div>
+            <div class="names-grid" id="tier5Grid"></div>
+        </div>
+
+        <!-- Add Form -->
+        <div class="add-form" id="addForm">
+            <input type="text" id="ignInput" placeholder="Enter IGN">
+            <select id="tierSelect">
+                <option value="1">Tier 1</option>
+                <option value="2">Tier 2</option>
+                <option value="3">Tier 3</option>
+                <option value="4">Tier 4</option>
+                <option value="5">Tier 5</option>
+            </select>
+            <select id="exactTierSelect">
+                <option value="ht">High Tier (HT)</option>
+                <option value="lt">Low Tier (LT)</option>
+            </select>
+            <button id="addButton">Add Entry</button>
+        </div>
+
+        <div class="copyright">
+            Copyright © 2023 Quadratickfd, Marlow<br>
+            All Rights Reserved
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
