@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tier-section {
+    margin-bottom: 30px;
+    background: #2a2a2a;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.tier-header {
+    font-size: 24px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.tier-1 .tier-header { background: #ff5555; }
+.tier-2 .tier-header { background: #ffaa00; }
+.tier-3 .tier-header { background: #55aaff; }
+.tier-4 .tier-header { background: #aa55ff; }
+.tier-5 .tier-header { background: #55ffaa; }
+
+.names-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.name-card {
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.2s;
+    position: relative;
+}
+
+.name-card:hover {
+    transform: translateY(-3px);
+    background: #3a3a3a;
+}
+
+.admin-login {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.admin-login button {
+    padding: 10px 20px;
+    background: #ff5555;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.add-form {
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: none;
+}
+
+.add-form input, .add-form select {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background: #333;
+    color: white;
+}
+
+.search-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.search-container input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background: #333;
+    color: white;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background: #55aaff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.search-result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 40px;
+    color: #666;
+}
+
+.admin-controls {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: none;
+}
+
+.admin-logged-in .admin-controls {
+    display: block;
+}
+
+.admin-logged-in .name-card {
+    padding-right: 60px;
+}
+
+.admin-controls button {
+    background: #ff5555;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    margin: 2px;
+    padding: 5px;
+}
